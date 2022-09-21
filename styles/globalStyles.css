@@ -1,15 +1,57 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-primary: #1a374d;
+  --color-grey-1: #191c1f;
+  --color-grey-1-opacity: #191c1f80;
+  --color-grey-2: #212529;
+  --color-grey-3: #343a40;
+  --color-grey-4: #adb5bd;
+  --color-grey-5: #ced4da;
+  --color-grey-6: #edf2ff;
+}
+a {
+  text-decoration: none;
+  color: var(--color-primary);
 }
 
-:root{
-    --color-primary: /* definir */;
-    --color-grey-1: #191C1F;
-    --color-grey-2: #212529;
-    --color-grey-3: #343A40;
-    --color-grey-4: #ADB5BD;
-    --color-grey-5: #CED4DA;
-    --color-grey-6: #EDF2FF;
+.box {
+  background-color: var(--color-grey-5);
+}
+.globalText {
+  font-family: "Inter", sans-serif;
+  line-height: 40px;
+}
+
+input {
+  margin: 5px;
+  width: 298px;
+  height: 44px;
+  border: none;
+  background: var(--color-grey-4);
+  border-radius: 8px;
+}
+input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  padding-left: 10px;
+  color: var(--color-primary);
+}
+
+button {
+  cursor: pointer;
+  width: 298px;
+  height: 44px;
+  text-align: center;
+  background: var(--color-primary);
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--color-grey-6);
 }

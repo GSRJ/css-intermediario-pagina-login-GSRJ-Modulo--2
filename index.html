@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <title>Login</title>
+  </head>
+  <body class="globalText">
+    <section class="box mainBox">
+      <div class="logo">
+        <img src="./assets/img/pokesocial.png" alt="logo" />
+        <h1>PokéSocial</h1>
+        <h5>Temos que pegar!</h5>
+      </div>
+      <div class="form">
+        <form id="inputData" action="">
+          <input
+            placeholder="Email"
+            type="email"
+            name="email"
+            id="email-login"
+          />
+          <input
+            placeholder="Senha"
+            type="password"
+            name="password"
+            id="password"
+          />
+          <p data-control-modal="reset" class="resetPassword">Esqueceu a senha?</p>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+      <section class="modal" id="reset" >
+        <div class="box resetPasswordBox">
+            <span class="resetTitle">
+            <h5>Recuperação de senha</h5>
+            <button  data-control-modal="reset" class="modalClose">x</button>
+            </span>
+            <span class="resetDescription">
+                <p> Digite seu email cadastrado abaixo para receber o link de redefinição de senha.</p>
+            </span>
+            <input
+            placeholder="Email"
+            type="email"
+            name="email"
+            id="email-login"
+          />
+          <button type="submit">Redefinir senha</button>
+        </div>
+      </section>
+    <script src="/scripts/modal.js"></script>
+  </body>
+</html>

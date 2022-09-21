@@ -1,0 +1,54 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-grey-1);
+}
+.mainBox {
+  height: 407px;
+  width: 714px;
+  left: 283px;
+  top: 156px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logo,
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.logo > h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+.logo > h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.logo > img {
+  height: 55px;
+}
+#inputData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resetPassword {
+  cursor: pointer;
+  position: relative;
+  left: 69px;
+  bottom: 8px;
+  font-size: 12px;
+  font-weight: 400;
+}
